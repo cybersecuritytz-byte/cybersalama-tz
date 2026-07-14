@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #00d4ff;
+    --bg-dark: #0a0b10;
+    --card-bg: #161b22;
+    --text-color: #ffffff;
+}
+
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg-dark); color: var(--text-color); margin: 0; }
+
+/* Navbar Responsive */
+nav { display: flex; justify-content: space-between; padding: 20px 5%; background: #000; }
+nav a { color: white; text-decoration: none; padding: 10px; }
+
+/* Dashboard Table Responsive */
+.table-container { overflow-x: auto; width: 90%; margin: 20px auto; }
+table { width: 100%; border-collapse: collapse; background: var(--card-bg); }
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid #333; }
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    nav { flex-direction: column; text-align: center; }
+    .hero h1 { font-size: 24px; }
+    th, td { padding: 8px; font-size: 12px; }
+}
