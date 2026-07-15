@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="sw">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Dashboard | Cyber Salama TZ</title>
+    <style>
+        body { background-color: #0d1117; color: #c9d1d9; font-family: 'Segoe UI', sans-serif; padding: 20px; }
+        .nav { background: #161b22; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        .nav a { color: #00f2fe; text-decoration: none; }
+        table { width: 100%; border-collapse: collapse; background: #161b22; }
+        th, td { padding: 15px; text-align: left; border-bottom: 1px solid #30363d; }
+        h2 { color: #00f2fe; }
+    </style>
 </head>
 <body>
-    <nav><div>CYBER SALAMA TZ - OPERATIONS</div></nav>
-    
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr><th>WAKATI</th><th>MTENDAJI</th><th>TAARIFA YA USALAMA</th></tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2026-07-14 19:20</td>
-                    <td>YAS</td>
-                    <td>Rapid packet distribution alert from unverified node</td>
-                </tr>
-                <tr>
-                    <td>2026-07-14 19:21</td>
-                    <td>YAS</td>
-                    <td>High-risk transaction request blocked: signature mismatch</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <div class="nav"><a href="/">← Rudi Nyumbani</a></div>
+    <h2>Dashboard ya Usalama</h2>
+    <table>
+        <thead>
+            <tr><th>WAKATI</th><th>MTENDAJI</th><th>TAARIFA YA USALAMA</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2026-07-15 18:20</td>
+                <td>YAS</td>
+                <td>Mfumo upo imara: Hakuna tishio lililogunduliwa.</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
